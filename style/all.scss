@@ -1,0 +1,27 @@
+.imgContainer{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  @media screen and (min-width: 768px) {
+    .bricklayer-column-sizer {
+      /* divide by 3. */
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .bricklayer-column-sizer {
+      /* divide by 3. */
+      width: 33.3%;
+    }
+  }
+}
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
